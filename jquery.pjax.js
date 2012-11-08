@@ -56,9 +56,7 @@ function fnPjax(selector, container, options) {
 //  })
 //
 // Returns nothing.
-function handleClick(event, container, options) {
-  options = optionsFor(container, options)
-
+function handleClick(event, options) {
   var link = event.currentTarget
 
   if (link.tagName.toUpperCase() !== 'A')
