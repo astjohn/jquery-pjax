@@ -27,9 +27,9 @@
 // the options object.
 //
 // Returns the jQuery object
-function fnPjax(selector, container, options) {
+function fnPjax(container, options) {
   var context = this
-  return this.on('click.pjax', selector, function(event) {
+  return this.on('click.pjax', function(event) {
     var opts = $.extend({}, optionsFor(container, options))
     if (!opts.container)
       opts.container = $(this).attr('data-pjax') || context
